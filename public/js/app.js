@@ -7,7 +7,7 @@ async function fetcher(location) {
 	messageOne.textContent = `Loading...`;
 	messageTwo.textContent = ``;		
 	const encodedLocation = encodeURIComponent(location);
-	const url = `http://localhost:3000/weather?location=${encodedLocation}`;
+	const url = `/weather?location=${encodedLocation}`;
 	const jsonData = await fetch(url);
 	const data = await jsonData.json();	
 
