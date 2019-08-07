@@ -71,7 +71,7 @@ app.get(`/help/*`, (req, res) => {
 	res.render(`notfound`, {
 		message: `Help page not found`,
 		name: `Made by Korum`,
-		title: `404...`
+		title: `Error 404`
 	});
 });
 
@@ -79,7 +79,7 @@ app.get(`*`, (req, res) => {
 	res.render(`notfound`, {
 		message: `Page not found`,
 		name: `Made by Korum`,
-		title: `404...`
+		title: `Error 404`
 	});
 });
 
